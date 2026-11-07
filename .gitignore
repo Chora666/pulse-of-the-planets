@@ -1,0 +1,12 @@
+# Media is not distributed in this repository (linked from Google Drive instead)
+*.mp4
+*.mov
+*.m4v
+*.wav
+*.aif
+*.aiff
+*.mp3
+*.m4a
+
+# macOS
+.DS_Store

@@ -1,0 +1,41 @@
+# Pulse of the Planets
+
+> Audiovisual interactive work for real-time ambient music. Three orbiting bodies in a single
+> Max/MSP patch drive note probability, pitch stability, filter brightness, level and stereo
+> position; Max sends the result as MIDI to Ableton Live, which supplies the instruments and the
+> mix. Author: Chaoran Yu (2025). Media is on Google Drive, not in the repository.
+
+## Start here
+
+- [docs/ai-assistant-guide.md](https://raw.githubusercontent.com/Chora666/pulse-of-the-planets/main/docs/ai-assistant-guide.md): setup guide written for AI assistants — what to install, how to create the MIDI ports, how to verify (read this first if you are helping a human)
+- [REPORT.pdf](https://raw.githubusercontent.com/Chora666/pulse-of-the-planets/main/REPORT.pdf): the written project report (20 pages)
+- [docs/setup-guide.md](https://raw.githubusercontent.com/Chora666/pulse-of-the-planets/main/docs/setup-guide.md): the operating manual
+- [README.md](https://raw.githubusercontent.com/Chora666/pulse-of-the-planets/main/README.md): project overview, demo links, requirements
+- [README.zh-CN.md](https://raw.githubusercontent.com/Chora666/pulse-of-the-planets/main/README.zh-CN.md): 简体中文说明
+
+## Key facts
+
+- Max 9.0.8 (x64) saved in the patch; developed on Windows
+- Main patch: `patch/Pulse_of_the_Planets.maxpat` — one file, no abstractions, samples or third-party externals
+- MIDI destinations are set by name: `loopMIDI Port 1` through `loopMIDI Port 7` (loopMIDI on Windows)
+- The Ableton Live set is **not** in the repository; the report documents the intended MIDI mapping
+- Three bodies: A (blue) quarter notes, B (purple) half notes, C (gold) whole notes
+- Distance → trigger probability, pitch stability, filter brightness, level and pan
+- Form: intro – verse – drop, with manual interaction (space bar / click) and a 15-press-in-4-seconds *Crazy Moment*
+- Visuals: `jit.lcd` at 1920×1080 — halos, collision lines, Boom flash, 200-point star fields
+- Media: demo video and audio recording on Google Drive, linked from the README
+
+## Documents
+
+- [Setup and operating guide](https://raw.githubusercontent.com/Chora666/pulse-of-the-planets/main/docs/setup-guide.md): ports, Live set, interface, interaction, recording
+- [Environment notes](https://raw.githubusercontent.com/Chora666/pulse-of-the-planets/main/docs/environment.md): what the project files record and what they do not
+- [Verification notes](https://raw.githubusercontent.com/Chora666/pulse-of-the-planets/main/docs/verification.md): static checks and optional fresh-setup checks
+- `REPORT.pdf` (repository root) — the written project report, 20 pages
+- `docs/architecture/` — patch diagrams taken from the report
+
+## Licensing
+
+- Patch: PolyForm Noncommercial 1.0.0 (`LICENSE.md`) — free for noncommercial use; commercial
+  use requires a separate licence from the author
+- Documentation and report: CC BY-NC 4.0 — attribution required, non-commercial only
+- Citation and credit line: `NOTICE.md`
